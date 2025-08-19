@@ -27,3 +27,4 @@ Route::middleware(['auth'])->group(function () {
 });
 
 require __DIR__ . '/auth.php';
+Route::get('/documents/{id}', [DocumentController::class, 'show'])->name('documents.show');
